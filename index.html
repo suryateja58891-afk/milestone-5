@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four-Operation Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator-card">
+    <h1>Four-Operation Calculator</h1>
+    <p class="subtitle">Enter two numbers and choose an operation.</p>
+
+    <label for="number1">First number</label>
+    <input type="number" id="number1" placeholder="Enter first number" step="any">
+
+    <label for="number2">Second number</label>
+    <input type="number" id="number2" placeholder="Enter second number" step="any">
+
+    <div class="operations">
+      <button type="button" data-operation="add">Addition (+)</button>
+      <button type="button" data-operation="subtract">Subtraction (−)</button>
+      <button type="button" data-operation="multiply">Multiplication (×)</button>
+      <button type="button" data-operation="divide">Division (÷)</button>
+    </div>
+
+    <section class="result-box" aria-live="polite">
+      <h2>Result</h2>
+      <p id="result">Your answer will appear here.</p>
+    </section>
+
+    <button type="button" id="clearButton" class="clear-button">Clear</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
